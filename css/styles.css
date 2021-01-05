@@ -1,0 +1,28 @@
+/* Esto lo agrego porque no viene en Normalize.css */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+#title {
+    color: crimson;
+}
+
+#description {
+    color: blue;
+}
+
+main {
+    border: 1px solid red;
+    padding: 10px;
+
+}
+
+#survey-form {
+    background-color: salmon;
+}
+
+#survey-form > label {
+    text-transform: capitalize;
+}
