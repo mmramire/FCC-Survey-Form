@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>FCC Surver Form</title>
 </head>
+
 <body>
     <header>
         <h1 id="title">SkyNet Subscription Form</h1>
-        <p id="description">Thanks for your collaboration, SkyNet improves with your feedback</p>
+        <p id="description">
+            Thanks for your collaboration, SkyNet improves with your feedback
+        </p>
     </header>
     <main>
         <form action="#" id="survey-form">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email" pattern=".+@provider.com"required >
+            <div>
+                <label for="name" id="name-label">Name</label>
+            </div>
+            <div>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required autofocus />
+            </div>
+            <div>
+                <label for="email" id="email-label">E-mail</label>
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="your@email.com"
+                    pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"
+                    autocomplete="on" autocapitalize="off" required />
+            </div>
+            <div>
+                <label for="age" id="number-label">Age (optional)</label>
+            </div>
+            <div>
+                <input type="number" name="age" id="age" min="10" max="99" placeholder="Age" />
+            </div>
+            <div>
+                <label for="dropdown">Which option best describes your current role?</label>
+            </div>
+            <div>
+                <select name="dropdown" id="dropdown">
+                    <option value="">Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full time job">Full time job</option>
+                    <option value="Full time learner">Full time learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
 
+
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
         </form>
     </main>
 </body>
+
 </html>
