@@ -5,24 +5,46 @@
   box-sizing: border-box;
 }
 
-#title {
-    color: crimson;
+main {
+  border: 1px solid red;
+  padding: 10px;
 }
 
 #description {
-    color: blue;
+  color: blue;
 }
 
-main {
-    border: 1px solid red;
-    padding: 10px;
+#email-label {
+}
 
+#email {
+    border-radius: 5px;
+}
+
+
+#name-label {
+    color: green;
+    font-weight: bolder;
+}
+
+#name {
+    font-weight:lighter;
+    color: blue;
 }
 
 #survey-form {
     background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
+
 #survey-form > label {
-    text-transform: capitalize;
+  text-transform: capitalize;
+}
+
+#title {
+  color: crimson;
 }
